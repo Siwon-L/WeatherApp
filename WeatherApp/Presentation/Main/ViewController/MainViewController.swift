@@ -7,9 +7,12 @@
 
 import UIKit
 
+import SnapKit
+
 final class MainViewController: UIViewController {
   weak var coordinator: MainCoordinator?
   private let searchBar = UISearchBar()
+  private let mainView = MainView()
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -28,5 +31,11 @@ final class MainViewController: UIViewController {
     }
   }
   
+  private func layout() {
+    view.addSubview(mainView)
+    mainView.snp.makeConstraints {
+      $0.edges.equalTo(view.safeAreaLayoutGuide)
+    }
+  }
 }
 
