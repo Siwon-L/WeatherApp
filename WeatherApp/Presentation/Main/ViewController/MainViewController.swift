@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+final class MainViewController: UIViewController {
   weak var coordinator: MainCoordinator?
   private let searchBar = UISearchBar()
   
