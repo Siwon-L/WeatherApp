@@ -16,6 +16,8 @@
 		9BA4F9BD299CB38F000B3C8B /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9BA4F9BC299CB38F000B3C8B /* RxSwift */; };
 		9BA4F9C0299CB3A3000B3C8B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9BA4F9BF299CB3A3000B3C8B /* SnapKit */; };
 		9BA4F9C3299CB3EC000B3C8B /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9BA4F9C2299CB3EC000B3C8B /* Alamofire */; };
+		9BA4F9C7299CB4D8000B3C8B /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA4F9C6299CB4D8000B3C8B /* Coordinator.swift */; };
+		9BA4F9C9299CB4F1000B3C8B /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA4F9C8299CB4F1000B3C8B /* AppCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		9BA4F9AE299CAFA7000B3C8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9BA4F9B1299CAFA7000B3C8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9BA4F9B3299CAFA7000B3C8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BA4F9C6299CB4D8000B3C8B /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		9BA4F9C8299CB4F1000B3C8B /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,14 +66,32 @@
 		9BA4F9A4299CAFA3000B3C8B /* WeatherApp */ = {
 			isa = PBXGroup;
 			children = (
-				9BA4F9A5299CAFA3000B3C8B /* AppDelegate.swift */,
-				9BA4F9A7299CAFA3000B3C8B /* SceneDelegate.swift */,
+				9BA4F9C4299CB4AA000B3C8B /* Application */,
 				9BA4F9A9299CAFA3000B3C8B /* ViewController.swift */,
 				9BA4F9AE299CAFA7000B3C8B /* Assets.xcassets */,
 				9BA4F9B0299CAFA7000B3C8B /* LaunchScreen.storyboard */,
 				9BA4F9B3299CAFA7000B3C8B /* Info.plist */,
 			);
 			path = WeatherApp;
+			sourceTree = "<group>";
+		};
+		9BA4F9C4299CB4AA000B3C8B /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				9BA4F9C5299CB4C4000B3C8B /* Coordinator */,
+				9BA4F9A5299CAFA3000B3C8B /* AppDelegate.swift */,
+				9BA4F9A7299CAFA3000B3C8B /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		9BA4F9C5299CB4C4000B3C8B /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				9BA4F9C6299CB4D8000B3C8B /* Coordinator.swift */,
+				9BA4F9C8299CB4F1000B3C8B /* AppCoordinator.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,7 +175,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BA4F9C7299CB4D8000B3C8B /* Coordinator.swift in Sources */,
 				9BA4F9AA299CAFA3000B3C8B /* ViewController.swift in Sources */,
+				9BA4F9C9299CB4F1000B3C8B /* AppCoordinator.swift in Sources */,
 				9BA4F9A6299CAFA3000B3C8B /* AppDelegate.swift in Sources */,
 				9BA4F9A8299CAFA3000B3C8B /* SceneDelegate.swift in Sources */,
 			);
