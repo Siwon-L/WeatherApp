@@ -62,3 +62,4 @@ DerivedData/
 *.xcodeproj
 *.xcworkspace
 
+*.xcuserstate
