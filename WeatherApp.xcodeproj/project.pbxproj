@@ -40,6 +40,7 @@
 		9BD27DA6299E382C00359C4D /* WeatherInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD27DA5299E382C00359C4D /* WeatherInfo.swift */; };
 		9BD27DA8299E38CE00359C4D /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD27DA7299E38CE00359C4D /* City.swift */; };
 		9BD27DAA299E396300359C4D /* ObservationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD27DA9299E396300359C4D /* ObservationInfo.swift */; };
+		9BD27DAF299E54CF00359C4D /* WeatherRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD27DAE299E54CF00359C4D /* WeatherRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +76,7 @@
 		9BD27DA5299E382C00359C4D /* WeatherInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInfo.swift; sourceTree = "<group>"; };
 		9BD27DA7299E38CE00359C4D /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		9BD27DA9299E396300359C4D /* ObservationInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationInfo.swift; sourceTree = "<group>"; };
+		9BD27DAE299E54CF00359C4D /* WeatherRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +199,7 @@
 		9BA4F9D6299DE451000B3C8B /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				9BD27DAD299E54A600359C4D /* Repository */,
 				9BA4F9D7299DE45D000B3C8B /* Network */,
 			);
 			path = Data;
@@ -271,6 +274,14 @@
 				9BD27DA7299E38CE00359C4D /* City.swift */,
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		9BD27DAD299E54A600359C4D /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				9BD27DAE299E54CF00359C4D /* WeatherRepository.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -368,6 +379,7 @@
 				9BA4F9AA299CAFA3000B3C8B /* MainViewController.swift in Sources */,
 				9BD27D90299E14DF00359C4D /* CoordDTO.swift in Sources */,
 				9BA4F9E4299DF09A000B3C8B /* Bundle+Extension.swift in Sources */,
+				9BD27DAF299E54CF00359C4D /* WeatherRepository.swift in Sources */,
 				9BA4F9C9299CB4F1000B3C8B /* AppCoordinator.swift in Sources */,
 				9BA4F9A6299CAFA3000B3C8B /* AppDelegate.swift in Sources */,
 				9BA4F9A8299CAFA3000B3C8B /* SceneDelegate.swift in Sources */,
