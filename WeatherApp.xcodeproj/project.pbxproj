@@ -32,6 +32,7 @@
 		9BD27D8E299E13A400359C4D /* CityDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD27D8D299E13A400359C4D /* CityDTO.swift */; };
 		9BD27D90299E14DF00359C4D /* CoordDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD27D8F299E14DF00359C4D /* CoordDTO.swift */; };
 		9BD27D92299E17EB00359C4D /* ClimateDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD27D91299E17EB00359C4D /* ClimateDTO.swift */; };
+		9BD27D94299E18A100359C4D /* WeatherDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD27D93299E18A100359C4D /* WeatherDTO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,7 @@
 		9BD27D8D299E13A400359C4D /* CityDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDTO.swift; sourceTree = "<group>"; };
 		9BD27D8F299E14DF00359C4D /* CoordDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordDTO.swift; sourceTree = "<group>"; };
 		9BD27D91299E17EB00359C4D /* ClimateDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimateDTO.swift; sourceTree = "<group>"; };
+		9BD27D93299E18A100359C4D /* WeatherDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDTO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,6 +231,7 @@
 				9BD27D8B299E115A00359C4D /* ObservationInfoDTO.swift */,
 				9BD27D8F299E14DF00359C4D /* CoordDTO.swift */,
 				9BD27D91299E17EB00359C4D /* ClimateDTO.swift */,
+				9BD27D93299E18A100359C4D /* WeatherDTO.swift */,
 			);
 			path = DTO;
 			sourceTree = "<group>";
@@ -316,6 +319,7 @@
 			files = (
 				9BA4F9C7299CB4D8000B3C8B /* Coordinator.swift in Sources */,
 				9BA4F9E0299DEABB000B3C8B /* HTTPError.swift in Sources */,
+				9BD27D94299E18A100359C4D /* WeatherDTO.swift in Sources */,
 				9BD27D8C299E115A00359C4D /* ObservationInfoDTO.swift in Sources */,
 				9BA4F9DA299DE4D0000B3C8B /* WeatherEndpointAPI.swift in Sources */,
 				9BD27D92299E17EB00359C4D /* ClimateDTO.swift in Sources */,
