@@ -11,39 +11,48 @@ struct WeatherInfoDTO: Codable {
   let cod: String
   let message: Int
   let cnt: Int
-  let observationInfo: [ObservationInfoDTO]
+  let observationInfos: [ObservationInfoDTO]
   let city: CityDTO
   
   private enum CodingKeys: String, CodingKey {
     case cod, message, cnt, city
-    case observationInfo = "list"
+    case observationInfos = "list"
   }
   
   func toDomain(dateFormatter: DateFormatter) -> WeatherInfo {
-    let observationInfo = observationInfo.map { $0.toDomain(dateFormatter: dateFormatter) }
-    let (max, min) = getTeamMaxAndMin(observationInfo)
+    let observationInfos = observationInfos.map { $0.toDomain(dateFormatter: dateFormatter) }
     
     return WeatherInfo(
-      observationInfo: observationInfo,
+      observationInfos: observationInfos,
       city: city.toDomain(),
-      teamMaxs: max,
-      teamMins: min
+      weekWeatherInfo: getWeakWeatherInfo(observationInfos)
     )
   }
   
-  private func getTeamMaxAndMin(_ observationInfo: [ObservationInfo]) -> (max: [Double], min: [Double]) {
-    var day = ""
-    var max: [Double] = []
-    var min: [Double] = []
-    for _ in 0..<5 {
-      guard let index = observationInfo.firstIndex(where:{ $0.day != day }) else { break }
-      let teams = observationInfo.filter({ $0.day == observationInfo[index].day }).map({ $0.temp })
-      guard let teamMax = teams.max() else { break }
-      max.append(teamMax)
-      guard let teamMax = teams.min() else { break }
-      min.append(teamMax)
-      day = observationInfo[index].day
+  private func getWeakWeatherInfo(_ observationInfos: [ObservationInfo]) -> [DayWeatherInfo] {
+    var weekWeatherInfo: [DayWeatherInfo] = []
+    for day in observationInfos.map({ $0.day }).deduplication() {
+      let dayWeather = observationInfos.filter({ $0.day == day })
+      guard let dayWeatherCase = dayWeather.first(where: { $0.time == "오후 12시" })?.weatherCase else { break }
+      let dayTeams = dayWeather.map({ $0.temp })
+      guard let dayTeamMax = dayTeams.max() else { break }
+      guard let dayTeamMin = dayTeams.min() else { break }
+      
+      let dayWeatherInfo = DayWeatherInfo(
+        day: day,
+        weatherCase: dayWeatherCase,
+        teamMax: dayTeamMax,
+        teamMin: dayTeamMin
+      )
+      weekWeatherInfo.append(dayWeatherInfo)
     }
-    return (max, min)
+    return weekWeatherInfo
+  }
+}
+
+private extension Sequence where Element: Hashable {
+  func deduplication() -> [Element] {
+    var set = Set<Element>()
+    return filter { set.insert($0).inserted }
   }
 }
