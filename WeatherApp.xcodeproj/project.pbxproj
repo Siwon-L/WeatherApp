@@ -27,6 +27,7 @@
 		9BA4F9E2299DEEB4000B3C8B /* WeatherAPIInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9BA4F9E1299DEEB4000B3C8B /* WeatherAPIInfo.plist */; };
 		9BA4F9E4299DF09A000B3C8B /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA4F9E3299DF09A000B3C8B /* Bundle+Extension.swift */; };
 		9BA4F9E6299DF4ED000B3C8B /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA4F9E5299DF4ED000B3C8B /* NetworkService.swift */; };
+		9BA4F9E8299DF69D000B3C8B /* WeatherServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA4F9E7299DF69D000B3C8B /* WeatherServiceError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		9BA4F9E1299DEEB4000B3C8B /* WeatherAPIInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = WeatherAPIInfo.plist; sourceTree = "<group>"; };
 		9BA4F9E3299DF09A000B3C8B /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
 		9BA4F9E5299DF4ED000B3C8B /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		9BA4F9E7299DF69D000B3C8B /* WeatherServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherServiceError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				9BA4F9DF299DEABB000B3C8B /* HTTPError.swift */,
+				9BA4F9E7299DF69D000B3C8B /* WeatherServiceError.swift */,
 			);
 			path = Error;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 				9BA4F9C7299CB4D8000B3C8B /* Coordinator.swift in Sources */,
 				9BA4F9E0299DEABB000B3C8B /* HTTPError.swift in Sources */,
 				9BA4F9DA299DE4D0000B3C8B /* WeatherEndpointAPI.swift in Sources */,
+				9BA4F9E8299DF69D000B3C8B /* WeatherServiceError.swift in Sources */,
 				9BA4F9D5299CECE5000B3C8B /* MainView.swift in Sources */,
 				9BA4F9CF299CE618000B3C8B /* MainCoordinator.swift in Sources */,
 				9BA4F9DD299DE8B4000B3C8B /* Endpoint.swift in Sources */,
