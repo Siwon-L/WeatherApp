@@ -29,6 +29,14 @@ final class Endpoint {
     self.queries = queries
   }
   
+  func create() throws -> URLRequest {
+    let url = try createURL()
+    var request = URLRequest(url: url)
+    request.httpMethod = method.rawValue
+
+    return request
+  }
+  
   private func createURL() throws -> URL {
     let urlString = base + path
     
