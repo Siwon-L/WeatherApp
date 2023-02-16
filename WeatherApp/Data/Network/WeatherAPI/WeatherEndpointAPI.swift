@@ -28,7 +28,8 @@ enum WeatherEndpointAPI {
           "lat": lat,
           "lon": lon,
           "appid": Bundle.main.apiKey,
-          "units": "metric"
+          "units": "metric",
+          "lang": "kr"
         ]
       )
     }
