@@ -43,6 +43,7 @@
 		9BD27DAF299E54CF00359C4D /* WeatherRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD27DAE299E54CF00359C4D /* WeatherRepository.swift */; };
 		9BD27DB2299E58F300359C4D /* WeatherRepositoryable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD27DB1299E58F300359C4D /* WeatherRepositoryable.swift */; };
 		9BD27DB5299E597D00359C4D /* WeatherUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD27DB4299E597D00359C4D /* WeatherUseCase.swift */; };
+		9BD27DB7299E61DD00359C4D /* DayWeatherInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD27DB6299E61DD00359C4D /* DayWeatherInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +82,7 @@
 		9BD27DAE299E54CF00359C4D /* WeatherRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRepository.swift; sourceTree = "<group>"; };
 		9BD27DB1299E58F300359C4D /* WeatherRepositoryable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRepositoryable.swift; sourceTree = "<group>"; };
 		9BD27DB4299E597D00359C4D /* WeatherUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherUseCase.swift; sourceTree = "<group>"; };
+		9BD27DB6299E61DD00359C4D /* DayWeatherInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayWeatherInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -277,6 +279,7 @@
 			children = (
 				9BD27DA5299E382C00359C4D /* WeatherInfo.swift */,
 				9BD27DA9299E396300359C4D /* ObservationInfo.swift */,
+				9BD27DB6299E61DD00359C4D /* DayWeatherInfo.swift */,
 				9BD27DA7299E38CE00359C4D /* City.swift */,
 			);
 			path = Entity;
@@ -404,6 +407,7 @@
 				9BD27DB5299E597D00359C4D /* WeatherUseCase.swift in Sources */,
 				9BD27DAF299E54CF00359C4D /* WeatherRepository.swift in Sources */,
 				9BA4F9C9299CB4F1000B3C8B /* AppCoordinator.swift in Sources */,
+				9BD27DB7299E61DD00359C4D /* DayWeatherInfo.swift in Sources */,
 				9BA4F9A6299CAFA3000B3C8B /* AppDelegate.swift in Sources */,
 				9BA4F9A8299CAFA3000B3C8B /* SceneDelegate.swift in Sources */,
 				9BD27D9D299E1C2400359C4D /* WindDTO.swift in Sources */,
