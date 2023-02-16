@@ -37,11 +37,10 @@ struct WeatherInfoDTO: Codable {
     var min: [Double] = []
     for _ in 0..<5 {
       guard let index = observationInfo.firstIndex(where:{ $0.day != day }) else { break }
-      guard let teamMax = observationInfo.filter({ $0.day == observationInfo[index].day })
-        .map({ $0.temp }).max() else { break }
+      let teams = observationInfo.filter({ $0.day == observationInfo[index].day }).map({ $0.temp })
+      guard let teamMax = teams.max() else { break }
       max.append(teamMax)
-      guard let teamMax = observationInfo.filter({ $0.day == observationInfo[index].day })
-        .map({ $0.temp }).min() else { break }
+      guard let teamMax = teams.min() else { break }
       min.append(teamMax)
       day = observationInfo[index].day
     }
