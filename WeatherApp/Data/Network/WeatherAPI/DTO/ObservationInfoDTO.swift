@@ -40,7 +40,7 @@ struct ObservationInfoDTO: Codable {
       time: String(tiem),
       temp: climate.temp,
       humidity: climate.humidity,
-      weatherCase: weather.first?.weatherCase.toDomian() ?? .none,
+      weatherCase: weather.first?.weatherCase.toDomain() ?? .none,
       weatherDescription: weather.first?.description ?? "알 수 없음",
       clouds: clouds.all,
       windSpeed: wind.speed
