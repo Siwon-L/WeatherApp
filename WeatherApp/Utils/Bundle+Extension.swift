@@ -24,6 +24,6 @@ extension Bundle {
     guard let key = resource["API_KEY"] as? String else {
       return ""
     }
-    return ""
+    return key
   }
 }
