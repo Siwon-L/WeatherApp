@@ -23,5 +23,6 @@ enum WeatherCase {
   case clouds
   case rain
   case snow
+  case none
 }
 
