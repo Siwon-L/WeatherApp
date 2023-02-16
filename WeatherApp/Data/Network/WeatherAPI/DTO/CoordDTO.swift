@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+struct CoordDTO: Codable {
+  let lat: Double
+  let lon: Double
+}
