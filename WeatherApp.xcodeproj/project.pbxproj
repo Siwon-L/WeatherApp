@@ -23,6 +23,7 @@
 		9BA4F9D5299CECE5000B3C8B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA4F9D4299CECE5000B3C8B /* MainView.swift */; };
 		9BA4F9DA299DE4D0000B3C8B /* WeatherEndpointAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA4F9D9299DE4D0000B3C8B /* WeatherEndpointAPI.swift */; };
 		9BA4F9DD299DE8B4000B3C8B /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA4F9DC299DE8B4000B3C8B /* Endpoint.swift */; };
+		9BA4F9E0299DEABB000B3C8B /* HTTPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA4F9DF299DEABB000B3C8B /* HTTPError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		9BA4F9D4299CECE5000B3C8B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		9BA4F9D9299DE4D0000B3C8B /* WeatherEndpointAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherEndpointAPI.swift; sourceTree = "<group>"; };
 		9BA4F9DC299DE8B4000B3C8B /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		9BA4F9DF299DEABB000B3C8B /* HTTPError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 		9BA4F9D0299CE8EB000B3C8B /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				9BA4F9DE299DEA90000B3C8B /* Error */,
 				9BA4F9D1299CE900000B3C8B /* Then.swift */,
 			);
 			path = Utils;
@@ -187,6 +190,14 @@
 				9BA4F9DC299DE8B4000B3C8B /* Endpoint.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		9BA4F9DE299DEA90000B3C8B /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				9BA4F9DF299DEABB000B3C8B /* HTTPError.swift */,
+			);
+			path = Error;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BA4F9C7299CB4D8000B3C8B /* Coordinator.swift in Sources */,
+				9BA4F9E0299DEABB000B3C8B /* HTTPError.swift in Sources */,
 				9BA4F9DA299DE4D0000B3C8B /* WeatherEndpointAPI.swift in Sources */,
 				9BA4F9D5299CECE5000B3C8B /* MainView.swift in Sources */,
 				9BA4F9CF299CE618000B3C8B /* MainCoordinator.swift in Sources */,
