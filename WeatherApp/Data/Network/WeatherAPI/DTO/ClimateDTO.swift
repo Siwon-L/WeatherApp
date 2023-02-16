@@ -18,7 +18,7 @@ struct ClimateDTO: Codable {
   let humidity: Int
   let tempKf: Double
   
-  enum CodingKeys: String, CodingKey {
+  private enum CodingKeys: String, CodingKey {
     case temp
     case feelsLike = "feels_like"
     case tempMin = "temp_min"

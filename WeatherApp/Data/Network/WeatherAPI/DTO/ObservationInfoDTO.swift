@@ -20,7 +20,7 @@ struct ObservationInfoDTO: Codable {
   let rain: RainDTO?
   let snow: RainDTO?
   
-  enum CodingKeys: String, CodingKey {
+  private enum CodingKeys: String, CodingKey {
     case time = "dt"
     case climate = "main"
     case weather, clouds, wind, visibility, pop, sys
