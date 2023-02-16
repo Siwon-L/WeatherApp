@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+struct WeatherInfo {
+  let observationInfo: [ObservationInfo]
+  let city: City
+}
