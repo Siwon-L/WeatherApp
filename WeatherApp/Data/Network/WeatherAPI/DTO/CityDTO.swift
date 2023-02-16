@@ -16,4 +16,12 @@ struct CityDTO: Codable {
   let timezone: Int
   let sunrise: Int
   let sunset: Int
+  
+  func toDomain() -> City {
+    City(
+      name: name,
+      lat: coord.lat,
+      lon: coord.lon
+    )
+  }
 }

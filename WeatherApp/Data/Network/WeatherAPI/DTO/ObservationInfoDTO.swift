@@ -27,4 +27,23 @@ struct ObservationInfoDTO: Codable {
     case dtTxt = "dt_txt"
     case rain, snow
   }
+  
+  func toDomain(dateFormatter: DateFormatter) -> ObservationInfo {
+    let splited = dateFormatter
+      .string(from: .init(timeIntervalSince1970: TimeInterval(time)))
+      .split(separator: " ")
+    let day = splited[0]
+    let tiem = "\(splited[1]) \(splited[2])"
+    
+    return ObservationInfo(
+      day: String(day),
+      time: String(tiem),
+      temp: climate.temp,
+      humidity: climate.humidity,
+      weatherCase: weather.first?.weatherCase.toDomian() ?? .none,
+      weatherDescription: weather.first?.description ?? "알 수 없음",
+      clouds: clouds.all,
+      windSpeed: wind.speed
+    )
+  }
 }

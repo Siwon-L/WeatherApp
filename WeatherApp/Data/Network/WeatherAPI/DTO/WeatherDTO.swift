@@ -25,4 +25,17 @@ enum WeatherCaseDTO: String, Codable {
   case clouds = "Clouds"
   case rain = "Rain"
   case snow = "Snow"
+  
+  func toDomain() -> WeatherCase {
+    switch self {
+    case .clear:
+      return .clear
+    case .clouds:
+      return .clouds
+    case .rain:
+      return .rain
+    case .snow:
+      return .snow
+    }
+  }
 }
