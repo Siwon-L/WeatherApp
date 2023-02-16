@@ -39,6 +39,7 @@
 		9BD27DA1299E1DA600359C4D /* RainDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD27DA0299E1DA600359C4D /* RainDTO.swift */; };
 		9BD27DA6299E382C00359C4D /* WeatherInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD27DA5299E382C00359C4D /* WeatherInfo.swift */; };
 		9BD27DA8299E38CE00359C4D /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD27DA7299E38CE00359C4D /* City.swift */; };
+		9BD27DAA299E396300359C4D /* ObservationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD27DA9299E396300359C4D /* ObservationInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +74,7 @@
 		9BD27DA0299E1DA600359C4D /* RainDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainDTO.swift; sourceTree = "<group>"; };
 		9BD27DA5299E382C00359C4D /* WeatherInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInfo.swift; sourceTree = "<group>"; };
 		9BD27DA7299E38CE00359C4D /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		9BD27DA9299E396300359C4D /* ObservationInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -265,6 +267,7 @@
 			isa = PBXGroup;
 			children = (
 				9BD27DA5299E382C00359C4D /* WeatherInfo.swift */,
+				9BD27DA9299E396300359C4D /* ObservationInfo.swift */,
 				9BD27DA7299E38CE00359C4D /* City.swift */,
 			);
 			path = Entity;
@@ -352,6 +355,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BA4F9C7299CB4D8000B3C8B /* Coordinator.swift in Sources */,
+				9BD27DAA299E396300359C4D /* ObservationInfo.swift in Sources */,
 				9BA4F9E0299DEABB000B3C8B /* HTTPError.swift in Sources */,
 				9BD27D94299E18A100359C4D /* WeatherDTO.swift in Sources */,
 				9BD27D8C299E115A00359C4D /* ObservationInfoDTO.swift in Sources */,
