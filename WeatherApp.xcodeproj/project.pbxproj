@@ -28,6 +28,7 @@
 		9BA4F9E6299DF4ED000B3C8B /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA4F9E5299DF4ED000B3C8B /* NetworkService.swift */; };
 		9BA4F9E8299DF69D000B3C8B /* WeatherServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA4F9E7299DF69D000B3C8B /* WeatherServiceError.swift */; };
 		9BD27D8A299E109200359C4D /* WeatherInfoDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD27D89299E109200359C4D /* WeatherInfoDTO.swift */; };
+		9BD27D8C299E115A00359C4D /* ObservationInfoDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD27D8B299E115A00359C4D /* ObservationInfoDTO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		9BA4F9E5299DF4ED000B3C8B /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		9BA4F9E7299DF69D000B3C8B /* WeatherServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherServiceError.swift; sourceTree = "<group>"; };
 		9BD27D89299E109200359C4D /* WeatherInfoDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInfoDTO.swift; sourceTree = "<group>"; };
+		9BD27D8B299E115A00359C4D /* ObservationInfoDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationInfoDTO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				9BD27D89299E109200359C4D /* WeatherInfoDTO.swift */,
+				9BD27D8B299E115A00359C4D /* ObservationInfoDTO.swift */,
 			);
 			path = DTO;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 			files = (
 				9BA4F9C7299CB4D8000B3C8B /* Coordinator.swift in Sources */,
 				9BA4F9E0299DEABB000B3C8B /* HTTPError.swift in Sources */,
+				9BD27D8C299E115A00359C4D /* ObservationInfoDTO.swift in Sources */,
 				9BA4F9DA299DE4D0000B3C8B /* WeatherEndpointAPI.swift in Sources */,
 				9BA4F9E8299DF69D000B3C8B /* WeatherServiceError.swift in Sources */,
 				9BA4F9D5299CECE5000B3C8B /* MainView.swift in Sources */,
