@@ -6,3 +6,22 @@
 //
 
 import Foundation
+
+struct ObservationInfo {
+  let day: String
+  let time: String
+  let temp: Double
+  let humidity: Int
+  let weatherCase: WeatherCase
+  let weatherDescription: String
+  let clouds: Int
+  let windSpeed: Double
+}
+
+enum WeatherCase {
+  case clear
+  case clouds
+  case rain
+  case snow
+}
+
