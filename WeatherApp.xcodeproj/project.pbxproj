@@ -29,6 +29,7 @@
 		9BA4F9E8299DF69D000B3C8B /* WeatherServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA4F9E7299DF69D000B3C8B /* WeatherServiceError.swift */; };
 		9BD27D8A299E109200359C4D /* WeatherInfoDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD27D89299E109200359C4D /* WeatherInfoDTO.swift */; };
 		9BD27D8C299E115A00359C4D /* ObservationInfoDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD27D8B299E115A00359C4D /* ObservationInfoDTO.swift */; };
+		9BD27D8E299E13A400359C4D /* CityDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD27D8D299E13A400359C4D /* CityDTO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		9BA4F9E7299DF69D000B3C8B /* WeatherServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherServiceError.swift; sourceTree = "<group>"; };
 		9BD27D89299E109200359C4D /* WeatherInfoDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInfoDTO.swift; sourceTree = "<group>"; };
 		9BD27D8B299E115A00359C4D /* ObservationInfoDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationInfoDTO.swift; sourceTree = "<group>"; };
+		9BD27D8D299E13A400359C4D /* CityDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDTO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +222,7 @@
 			children = (
 				9BD27D89299E109200359C4D /* WeatherInfoDTO.swift */,
 				9BD27D8B299E115A00359C4D /* ObservationInfoDTO.swift */,
+				9BD27D8D299E13A400359C4D /* CityDTO.swift */,
 			);
 			path = DTO;
 			sourceTree = "<group>";
@@ -319,6 +322,7 @@
 				9BA4F9A6299CAFA3000B3C8B /* AppDelegate.swift in Sources */,
 				9BA4F9A8299CAFA3000B3C8B /* SceneDelegate.swift in Sources */,
 				9BA4F9E6299DF4ED000B3C8B /* NetworkService.swift in Sources */,
+				9BD27D8E299E13A400359C4D /* CityDTO.swift in Sources */,
 				9BD27D8A299E109200359C4D /* WeatherInfoDTO.swift in Sources */,
 				9BA4F9D2299CE900000B3C8B /* Then.swift in Sources */,
 			);
