@@ -10,4 +10,6 @@ import Foundation
 struct WeatherInfo {
   let observationInfo: [ObservationInfo]
   let city: City
+  let teamMaxs: [Double]
+  let teamMins: [Double]
 }
