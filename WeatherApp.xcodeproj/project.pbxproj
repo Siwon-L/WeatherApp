@@ -38,6 +38,7 @@
 		9BD27D9F299E1CB600359C4D /* SysDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD27D9E299E1CB600359C4D /* SysDTO.swift */; };
 		9BD27DA1299E1DA600359C4D /* RainDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD27DA0299E1DA600359C4D /* RainDTO.swift */; };
 		9BD27DA6299E382C00359C4D /* WeatherInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD27DA5299E382C00359C4D /* WeatherInfo.swift */; };
+		9BD27DA8299E38CE00359C4D /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD27DA7299E38CE00359C4D /* City.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +72,7 @@
 		9BD27D9E299E1CB600359C4D /* SysDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SysDTO.swift; sourceTree = "<group>"; };
 		9BD27DA0299E1DA600359C4D /* RainDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainDTO.swift; sourceTree = "<group>"; };
 		9BD27DA5299E382C00359C4D /* WeatherInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInfo.swift; sourceTree = "<group>"; };
+		9BD27DA7299E38CE00359C4D /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -263,6 +265,7 @@
 			isa = PBXGroup;
 			children = (
 				9BD27DA5299E382C00359C4D /* WeatherInfo.swift */,
+				9BD27DA7299E38CE00359C4D /* City.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -372,6 +375,7 @@
 				9BD27D9F299E1CB600359C4D /* SysDTO.swift in Sources */,
 				9BD27D8A299E109200359C4D /* WeatherInfoDTO.swift in Sources */,
 				9BD27DA6299E382C00359C4D /* WeatherInfo.swift in Sources */,
+				9BD27DA8299E38CE00359C4D /* City.swift in Sources */,
 				9BA4F9D2299CE900000B3C8B /* Then.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
