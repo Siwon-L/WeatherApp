@@ -30,6 +30,7 @@
 		9BD27D8A299E109200359C4D /* WeatherInfoDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD27D89299E109200359C4D /* WeatherInfoDTO.swift */; };
 		9BD27D8C299E115A00359C4D /* ObservationInfoDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD27D8B299E115A00359C4D /* ObservationInfoDTO.swift */; };
 		9BD27D8E299E13A400359C4D /* CityDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD27D8D299E13A400359C4D /* CityDTO.swift */; };
+		9BD27D90299E14DF00359C4D /* CoordDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD27D8F299E14DF00359C4D /* CoordDTO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		9BD27D89299E109200359C4D /* WeatherInfoDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInfoDTO.swift; sourceTree = "<group>"; };
 		9BD27D8B299E115A00359C4D /* ObservationInfoDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationInfoDTO.swift; sourceTree = "<group>"; };
 		9BD27D8D299E13A400359C4D /* CityDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDTO.swift; sourceTree = "<group>"; };
+		9BD27D8F299E14DF00359C4D /* CoordDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordDTO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,8 +223,9 @@
 			isa = PBXGroup;
 			children = (
 				9BD27D89299E109200359C4D /* WeatherInfoDTO.swift */,
-				9BD27D8B299E115A00359C4D /* ObservationInfoDTO.swift */,
 				9BD27D8D299E13A400359C4D /* CityDTO.swift */,
+				9BD27D8B299E115A00359C4D /* ObservationInfoDTO.swift */,
+				9BD27D8F299E14DF00359C4D /* CoordDTO.swift */,
 			);
 			path = DTO;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 				9BA4F9CF299CE618000B3C8B /* MainCoordinator.swift in Sources */,
 				9BA4F9DD299DE8B4000B3C8B /* Endpoint.swift in Sources */,
 				9BA4F9AA299CAFA3000B3C8B /* MainViewController.swift in Sources */,
+				9BD27D90299E14DF00359C4D /* CoordDTO.swift in Sources */,
 				9BA4F9E4299DF09A000B3C8B /* Bundle+Extension.swift in Sources */,
 				9BA4F9C9299CB4F1000B3C8B /* AppCoordinator.swift in Sources */,
 				9BA4F9A6299CAFA3000B3C8B /* AppDelegate.swift in Sources */,
