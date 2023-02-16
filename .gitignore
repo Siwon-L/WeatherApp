@@ -63,3 +63,4 @@ DerivedData/
 *.xcworkspace
 
 *.xcuserstate
+WeatherApp/WeatherAPIInfo.plist
