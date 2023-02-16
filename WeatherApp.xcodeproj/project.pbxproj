@@ -37,6 +37,7 @@
 		9BD27D9D299E1C2400359C4D /* WindDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD27D9C299E1C2400359C4D /* WindDTO.swift */; };
 		9BD27D9F299E1CB600359C4D /* SysDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD27D9E299E1CB600359C4D /* SysDTO.swift */; };
 		9BD27DA1299E1DA600359C4D /* RainDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD27DA0299E1DA600359C4D /* RainDTO.swift */; };
+		9BD27DA6299E382C00359C4D /* WeatherInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD27DA5299E382C00359C4D /* WeatherInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +70,7 @@
 		9BD27D9C299E1C2400359C4D /* WindDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindDTO.swift; sourceTree = "<group>"; };
 		9BD27D9E299E1CB600359C4D /* SysDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SysDTO.swift; sourceTree = "<group>"; };
 		9BD27DA0299E1DA600359C4D /* RainDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainDTO.swift; sourceTree = "<group>"; };
+		9BD27DA5299E382C00359C4D /* WeatherInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 			children = (
 				9BA4F9C4299CB4AA000B3C8B /* Application */,
 				9BA4F9D6299DE451000B3C8B /* Data */,
+				9BD27DA3299E368C00359C4D /* Domain */,
 				9BA4F9CA299CE5D5000B3C8B /* Presentation */,
 				9BA4F9D0299CE8EB000B3C8B /* Utils */,
 				9BA4F9AE299CAFA7000B3C8B /* Assets.xcassets */,
@@ -248,6 +251,22 @@
 			path = DTO;
 			sourceTree = "<group>";
 		};
+		9BD27DA3299E368C00359C4D /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				9BD27DA4299E36A400359C4D /* Entity */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		9BD27DA4299E36A400359C4D /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				9BD27DA5299E382C00359C4D /* WeatherInfo.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -352,6 +371,7 @@
 				9BD27D8E299E13A400359C4D /* CityDTO.swift in Sources */,
 				9BD27D9F299E1CB600359C4D /* SysDTO.swift in Sources */,
 				9BD27D8A299E109200359C4D /* WeatherInfoDTO.swift in Sources */,
+				9BD27DA6299E382C00359C4D /* WeatherInfo.swift in Sources */,
 				9BA4F9D2299CE900000B3C8B /* Then.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
