@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+struct WindDTO: Codable {
+  let speed: Double
+  let deg: Int
+  let gust: Double
+}
