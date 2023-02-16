@@ -36,6 +36,7 @@
 		9BD27D9B299E1B7600359C4D /* CloudsDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD27D9A299E1B7600359C4D /* CloudsDTO.swift */; };
 		9BD27D9D299E1C2400359C4D /* WindDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD27D9C299E1C2400359C4D /* WindDTO.swift */; };
 		9BD27D9F299E1CB600359C4D /* SysDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD27D9E299E1CB600359C4D /* SysDTO.swift */; };
+		9BD27DA1299E1DA600359C4D /* RainDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD27DA0299E1DA600359C4D /* RainDTO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +68,7 @@
 		9BD27D9A299E1B7600359C4D /* CloudsDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudsDTO.swift; sourceTree = "<group>"; };
 		9BD27D9C299E1C2400359C4D /* WindDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindDTO.swift; sourceTree = "<group>"; };
 		9BD27D9E299E1CB600359C4D /* SysDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SysDTO.swift; sourceTree = "<group>"; };
+		9BD27DA0299E1DA600359C4D /* RainDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainDTO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,6 +243,7 @@
 				9BD27D93299E18A100359C4D /* WeatherDTO.swift */,
 				9BD27D9A299E1B7600359C4D /* CloudsDTO.swift */,
 				9BD27D9E299E1CB600359C4D /* SysDTO.swift */,
+				9BD27DA0299E1DA600359C4D /* RainDTO.swift */,
 			);
 			path = DTO;
 			sourceTree = "<group>";
@@ -343,6 +346,7 @@
 				9BA4F9A6299CAFA3000B3C8B /* AppDelegate.swift in Sources */,
 				9BA4F9A8299CAFA3000B3C8B /* SceneDelegate.swift in Sources */,
 				9BD27D9D299E1C2400359C4D /* WindDTO.swift in Sources */,
+				9BD27DA1299E1DA600359C4D /* RainDTO.swift in Sources */,
 				9BA4F9E6299DF4ED000B3C8B /* NetworkService.swift in Sources */,
 				9BD27D9B299E1B7600359C4D /* CloudsDTO.swift in Sources */,
 				9BD27D8E299E13A400359C4D /* CityDTO.swift in Sources */,
