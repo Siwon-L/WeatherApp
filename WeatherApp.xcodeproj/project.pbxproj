@@ -36,6 +36,7 @@
 		9BD27D99299E19B900359C4D /* WeatherCaseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD27D98299E19B900359C4D /* WeatherCaseDTO.swift */; };
 		9BD27D9B299E1B7600359C4D /* CloudsDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD27D9A299E1B7600359C4D /* CloudsDTO.swift */; };
 		9BD27D9D299E1C2400359C4D /* WindDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD27D9C299E1C2400359C4D /* WindDTO.swift */; };
+		9BD27D9F299E1CB600359C4D /* SysDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD27D9E299E1CB600359C4D /* SysDTO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +68,7 @@
 		9BD27D98299E19B900359C4D /* WeatherCaseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCaseDTO.swift; sourceTree = "<group>"; };
 		9BD27D9A299E1B7600359C4D /* CloudsDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudsDTO.swift; sourceTree = "<group>"; };
 		9BD27D9C299E1C2400359C4D /* WindDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindDTO.swift; sourceTree = "<group>"; };
+		9BD27D9E299E1CB600359C4D /* SysDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SysDTO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,6 +243,7 @@
 				9BD27D93299E18A100359C4D /* WeatherDTO.swift */,
 				9BD27D98299E19B900359C4D /* WeatherCaseDTO.swift */,
 				9BD27D9A299E1B7600359C4D /* CloudsDTO.swift */,
+				9BD27D9E299E1CB600359C4D /* SysDTO.swift */,
 			);
 			path = DTO;
 			sourceTree = "<group>";
@@ -347,6 +350,7 @@
 				9BD27D9B299E1B7600359C4D /* CloudsDTO.swift in Sources */,
 				9BD27D99299E19B900359C4D /* WeatherCaseDTO.swift in Sources */,
 				9BD27D8E299E13A400359C4D /* CityDTO.swift in Sources */,
+				9BD27D9F299E1CB600359C4D /* SysDTO.swift in Sources */,
 				9BD27D8A299E109200359C4D /* WeatherInfoDTO.swift in Sources */,
 				9BA4F9D2299CE900000B3C8B /* Then.swift in Sources */,
 			);
