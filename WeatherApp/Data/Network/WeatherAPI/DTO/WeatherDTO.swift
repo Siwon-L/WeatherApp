@@ -9,7 +9,7 @@ import Foundation
 
 struct WeatherDTO: Codable {
   let id: Int
-  let weatherCase: WeatherCase
+  let weatherCase: WeatherCaseDTO
   let description: String
   let icon: String
   
@@ -20,7 +20,7 @@ struct WeatherDTO: Codable {
   }
 }
 
-enum WeatherCase: String, Codable {
+enum WeatherCaseDTO: String, Codable {
   case clear = "Clear"
   case clouds = "Clouds"
   case rain = "Rain"
