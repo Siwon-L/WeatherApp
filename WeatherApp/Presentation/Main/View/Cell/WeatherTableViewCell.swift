@@ -68,3 +68,14 @@ final class WeatherTableViewCell: UITableViewCell {
     }
   }
 }
+
+// MARK: Binder
+
+extension WeatherTableViewCell {
+  func bindView(info: DayWeatherInfo) {
+    dayLabel.text = info.day
+    weatherIconImageView.image = UIImage(named: info.icon)
+    minTempLabel.text = "최소: \(Int(info.tempMin.rounded()))°"
+    maxTempLabel.text = "최대: \(Int(info.tempMax.rounded()))°"
+  }
+}
