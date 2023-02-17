@@ -11,7 +11,7 @@ import RxSwift
 import RxCocoa
 
 protocol MainViewModelInput {
-  
+  func inputCoordinate(lat: Double, lon: Double)
 }
 
 protocol MainViewModelOutput {
@@ -19,13 +19,10 @@ protocol MainViewModelOutput {
   var errorMessage: PublishRelay<String?> { get }
 }
 
-protocol MainViewModelable: MainViewModelInput, MainViewModelOutput {
-  var useCase: WeatherUseCaseable { get }
-  
-}
+protocol MainViewModelable: MainViewModelInput, MainViewModelOutput {}
 
 final class MainViewModel: MainViewModelable {
-  var useCase: WeatherUseCaseable
+  private var useCase: WeatherUseCaseable
   let errorMessage = PublishRelay<String?>()
   let weatherInfo = PublishRelay<WeatherInfo>()
   private let disposeBag = DisposeBag()
@@ -34,6 +31,10 @@ final class MainViewModel: MainViewModelable {
   init(useCase: WeatherUseCaseable) {
     self.useCase = useCase
     requestWeatherInfo()
+  }
+  
+  func inputCoordinate(lat: Double, lon: Double) {
+    coordinate.accept((lat, lon))
   }
 }
 

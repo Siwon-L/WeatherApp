@@ -12,11 +12,11 @@ import RxSwift
 
 final class MainViewController: UIViewController {
   weak var coordinator: MainCoordinator?
-  private let searchBar = UISearchController()
+  private lazy var searchBar = UISearchController(searchResultsController: coordinator?.makeSearchViewController())
   private let mainView = MainView()
   private let disposeBag = DisposeBag()
   private let viewModel: MainViewModelable
-  private let backgroundImageView = UIImageView()
+  private let backgroundImageView = UIImageView(image: UIImage(named: "sunny"))
   
   init(viewModel: MainViewModelable) {
     self.viewModel = viewModel
@@ -35,12 +35,11 @@ final class MainViewController: UIViewController {
   }
   
   private func attribute() {
-    view.backgroundColor = .systemBackground
     navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
     navigationController?.navigationBar.shadowImage = UIImage()
     searchBar.then {
       $0.searchBar.placeholder = "Search"
-      
+      $0.showsSearchResultsController = true
     }
     
     navigationItem.then {
@@ -71,7 +70,19 @@ final class MainViewController: UIViewController {
   }
   
   private func bindInput(_ viewModel: MainViewModelable) {
+    searchBar.searchBar.rx.text
+      .bind { value in
+        NotificationCenter.default.post(
+          name: .searchKetWord,
+          object: value
+        )
+      }.disposed(by: disposeBag)
     
+    NotificationCenter.default.rx.notification(.selectedCity)
+      .compactMap { $0.object as? City }
+      .bind(with: self) { owner, city in
+        owner.viewModel.inputCoordinate(lat: city.lat, lon: city.lon)
+      }.disposed(by: disposeBag)
   }
   
   private func bindOutput(_ viewModel: MainViewModelable) {
