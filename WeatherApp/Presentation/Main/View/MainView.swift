@@ -25,7 +25,7 @@ final class MainView: UIView {
   private let cloudsRoundView = RoundLabelView()
   private let windRoundView = RoundLabelView()
   private let emptyRoundView = RoundView(view: UIView())
-  private let weekWeatherRoundTabelView = RoundTableView()
+  let weekWeatherRoundTabelView = RoundTableView()
   private let dayWeatherRoundCollectionView = RoundCollectionView()
 
   
