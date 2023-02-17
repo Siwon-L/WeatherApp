@@ -17,7 +17,15 @@ final class MainCoordinator: Coordinator {
   }
   
   func start() {
-    let mainViewController = MainViewController()
+    let dateFormatter = DateFormatter()
+    dateFormatter.dateFormat = "E a h시"
+    dateFormatter.locale = Locale(identifier:"ko")
+    
+    let network = NetworkService()
+    let repository = WeatherRepository(networkService: network, dateFormatter: dateFormatter)
+    let useCase = WeatherUseCase(repository: repository)
+    let viewModel = MainViewModel(useCase: useCase)
+    let mainViewController = MainViewController(viewModel: viewModel)
     mainViewController.coordinator = self
     navigationController.pushViewController(mainViewController, animated: true)
   }
