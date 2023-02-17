@@ -19,11 +19,11 @@ struct ObservationInfo {
   let icon: String
 }
 
-enum WeatherCase {
-  case clear
-  case clouds
-  case rain
-  case snow
-  case none
+enum WeatherCase: String {
+  case clear = "sunny"
+  case clouds = "clouds"
+  case rain = "rain"
+  case snow = "snow"
+  case none = "none"
 }
 
