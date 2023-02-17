@@ -60,7 +60,7 @@ final class WeatherTableViewCell: UITableViewCell {
     weatherIconImageView.snp.makeConstraints {
       $0.centerY.equalToSuperview()
       $0.centerX.equalToSuperview().multipliedBy(0.7)
-      $0.height.width.equalTo(30)
+      $0.height.width.equalTo(35)
     }
     
     weatherIconImageView.snp.makeConstraints {
