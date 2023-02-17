@@ -23,7 +23,7 @@ final class RoundView: UIView {
   }
   
   private func attribute() {
-    backgroundColor = .systemGray.withAlphaComponent(0.3)
+    backgroundColor = .systemGray.withAlphaComponent(0.4)
     layer.cornerRadius = 10
     
     titleLabel.then {
