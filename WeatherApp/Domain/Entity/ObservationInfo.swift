@@ -9,7 +9,7 @@ import Foundation
 
 struct ObservationInfo {
   let day: String
-  let time: String
+  var time: String
   let temp: Double
   let humidity: Int
   let weatherCase: WeatherCase

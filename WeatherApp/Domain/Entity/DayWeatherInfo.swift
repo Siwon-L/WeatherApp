@@ -8,7 +8,7 @@
 import Foundation
 
 struct DayWeatherInfo {
-  let day: String
+  var day: String
   let icon: String
   let tempMax: Double
   let tempMin: Double
