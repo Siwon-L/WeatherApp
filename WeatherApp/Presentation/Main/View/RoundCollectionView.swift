@@ -52,7 +52,7 @@ final class RoundCollectionView: UIView {
     item.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 5, bottom: 0, trailing: 5)
     
     let groupSize = NSCollectionLayoutSize(
-      widthDimension: .fractionalWidth(1.0),
+      widthDimension: .fractionalWidth(0.2),
       heightDimension: .fractionalHeight(1.0)
     )
     let group = NSCollectionLayoutGroup.horizontal(
