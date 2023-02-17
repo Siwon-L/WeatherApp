@@ -122,10 +122,35 @@ final class MainViewController: UIViewController {
       .bind(with: self) { owner, weatherCase in
         owner.backgroundImageView.image = UIImage(named: weatherCase.rawValue)
       }.disposed(by: disposeBag)
+    
+    viewModel.weatherInfo
+      .observe(on: MainScheduler.instance)
+      .map { $0.city }
+      .bind(with: self) { owner, city in
+        owner.moveLocation(lat: city.lat, lon: city.lon, delta: 10.0)
+        owner.setAnnotation(lat: city.lat, lon: city.lon, cityName: city.name)
+      }.disposed(by: disposeBag)
       
     viewModel.errorMessage
       .bind(to: showErrorAlert)
       .disposed(by: disposeBag)
+  }
+}
+
+extension MainViewController {
+  private func moveLocation(lat: Double, lon: Double, delta span: Double) {
+    let location = CLLocationCoordinate2DMake(lat, lon)
+    let range = MKCoordinateSpan(latitudeDelta: span, longitudeDelta: span)
+    let region = MKCoordinateRegion(center: location, span: range)
+    mainView.roundMapView.mapView.setRegion(region, animated: true)
+  }
+  
+  private func setAnnotation(lat: Double, lon: Double, cityName: String) {
+    mainView.roundMapView.mapView.removeAnnotations(mainView.roundMapView.mapView.annotations)
+    let annotation = MKPointAnnotation()
+    annotation.coordinate = CLLocationCoordinate2DMake(lat, lon)
+    annotation.title = cityName
+    mainView.roundMapView.mapView.addAnnotation(annotation)
   }
 }
 
