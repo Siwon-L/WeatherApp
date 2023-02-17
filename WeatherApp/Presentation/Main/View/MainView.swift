@@ -8,12 +8,13 @@
 import UIKit
 
 import SnapKit
+import RxSwift
 
 final class MainView: UIView {
   private let scrollView = UIScrollView()
   private let cityNameLabel = UILabel()
   private let tempLabel = UILabel()
-  private let waetherCaseLabel = UILabel()
+  private let weatherDescriptionLabel = UILabel()
   private let maxAndMinTempLable = UILabel()
   private let mainInfoStackView = UIStackView()
   private let detailVerticalStackView = UIStackView()
@@ -44,32 +45,28 @@ final class MainView: UIView {
     cityNameLabel.then {
       $0.textAlignment = .center
       $0.font = .systemFont(ofSize: 40, weight: .regular)
-      $0.text = "Seoul"
     }
     
     tempLabel.then {
       $0.textAlignment = .center
       $0.font = .systemFont(ofSize: 100, weight: .medium)
-      $0.text = "-7°"
     }
     
-    waetherCaseLabel.then {
+    weatherDescriptionLabel.then {
       $0.textAlignment = .center
       $0.font = .systemFont(ofSize: 30, weight: .light)
-      $0.text = "맑음"
     }
     
     maxAndMinTempLable.then {
       $0.textAlignment = .center
       $0.font = .systemFont(ofSize: 20, weight: .light)
-      $0.text = "최고: -1°  |  최저: -11°"
     }
     
     mainInfoStackView.then {
       $0.addArrangedSubviews([
         cityNameLabel,
         tempLabel,
-        waetherCaseLabel,
+        weatherDescriptionLabel,
         maxAndMinTempLable
       ])
       $0.axis = .vertical
@@ -78,12 +75,10 @@ final class MainView: UIView {
     
     humidityRoundView.then {
       $0.roundView.titleLabel.text = "습도"
-      $0.infoLabel.text = "50%"
     }
     
     cloudsRoundView.then {
       $0.roundView.titleLabel.text = "구름"
-      $0.infoLabel.text = "50%"
     }
     
     windRoundView.then {
@@ -167,6 +162,24 @@ final class MainView: UIView {
       $0.top.equalTo(weekWeatherRoundTabelView.snp.bottom).offset(16)
       $0.bottom.equalToSuperview()
       $0.height.equalTo(detailVerticalStackView.snp.width)
+    }
+  }
+}
+
+// MARK: Binder
+
+extension MainView {
+  var bindView: Binder<WeatherInfo> {
+    return Binder(self) { owner, info in
+      owner.cityNameLabel.text = info.city.name
+      guard let currentObservationInfo = info.observationInfos.first,
+            let todayWeatherInfo = info.weekWeatherInfo.first else { return }
+      owner.tempLabel.text = "\(Int(currentObservationInfo.temp.rounded()))°"
+      owner.weatherDescriptionLabel.text = currentObservationInfo.weatherDescription
+      owner.maxAndMinTempLable.text = "최고: \(Int(todayWeatherInfo.tempMax.rounded()))°  |  최저: \(Int(todayWeatherInfo.tempMin.rounded()))°"
+      owner.humidityRoundView.infoLabel.text = "\(currentObservationInfo.humidity)%"
+      owner.cloudsRoundView.infoLabel.text = "\(currentObservationInfo.clouds)%"
+      owner.windRoundView.infoLabel.text = "\(currentObservationInfo.windSpeed)m/s"
     }
   }
 }
