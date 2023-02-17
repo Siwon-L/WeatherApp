@@ -127,6 +127,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B36F203299FEE3B00D139C1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9BD27DD5299FE4D900359C4D /* SearchTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		9BA4F999299CAFA3000B3C8B = {
 			isa = PBXGroup;
 			children = (
@@ -377,8 +385,8 @@
 		9BD27DD1299FDFFA00359C4D /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				9B36F203299FEE3B00D139C1 /* View */,
 				9BD27DD4299FE4A000359C4D /* ViewController */,
-				9BD27DD5299FE4D900359C4D /* SearchTableViewCell.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
