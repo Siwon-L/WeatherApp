@@ -29,4 +29,11 @@ final class MainCoordinator: Coordinator {
     mainViewController.coordinator = self
     navigationController.pushViewController(mainViewController, animated: true)
   }
+  
+  func makeSearchViewController() -> SearchViewController {
+    let searchCoordinator = SearchCoordinator(navigationController: navigationController)
+    childCoordinators.append(searchCoordinator)
+    searchCoordinator.parentCoordinator = self
+    return searchCoordinator.makeSearchViewController()
+  }
 }
