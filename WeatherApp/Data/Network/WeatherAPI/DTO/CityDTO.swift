@@ -12,14 +12,15 @@ struct CityDTO: Codable {
   let name: String
   let coord: CoordDTO
   let country: String
-  let population: Int
-  let timezone: Int
-  let sunrise: Int
-  let sunset: Int
+  let population: Int?
+  let timezone: Int?
+  let sunrise: Int?
+  let sunset: Int?
   
   func toDomain() -> City {
     City(
       name: name,
+      country: country,
       lat: coord.lat,
       lon: coord.lon
     )
