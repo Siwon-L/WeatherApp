@@ -10,6 +10,6 @@ import Foundation
 struct DayWeatherInfo {
   let day: String
   let weatherCase: WeatherCase
-  let teamMax: Double
-  let teamMin: Double
+  let tempMax: Double
+  let tempMin: Double
 }

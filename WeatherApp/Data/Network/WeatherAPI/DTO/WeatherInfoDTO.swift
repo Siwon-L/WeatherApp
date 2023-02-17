@@ -41,8 +41,8 @@ struct WeatherInfoDTO: Codable {
       let dayWeatherInfo = DayWeatherInfo(
         day: day,
         weatherCase: dayWeatherCase,
-        teamMax: dayTeamMax,
-        teamMin: dayTeamMin
+        tempMax: dayTeamMax,
+        tempMin: dayTeamMin
       )
       weekWeatherInfo.append(dayWeatherInfo)
     }
