@@ -11,6 +11,7 @@
 		9B36F206299FEEA800D139C1 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B36F205299FEEA800D139C1 /* SearchViewModel.swift */; };
 		9B36F209299FFFB300D139C1 /* SearchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B36F208299FFFB300D139C1 /* SearchCoordinator.swift */; };
 		9B36F20B29A00C9500D139C1 /* NSNotificationName+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B36F20A29A00C9500D139C1 /* NSNotificationName+Extension.swift */; };
+		9B36F20D29A0271B00D139C1 /* RoundMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B36F20C29A0271B00D139C1 /* RoundMapView.swift */; };
 		9BA4F9A6299CAFA3000B3C8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA4F9A5299CAFA3000B3C8B /* AppDelegate.swift */; };
 		9BA4F9A8299CAFA3000B3C8B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA4F9A7299CAFA3000B3C8B /* SceneDelegate.swift */; };
 		9BA4F9AA299CAFA3000B3C8B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA4F9A9299CAFA3000B3C8B /* MainViewController.swift */; };
@@ -68,6 +69,7 @@
 		9B36F205299FEEA800D139C1 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		9B36F208299FFFB300D139C1 /* SearchCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCoordinator.swift; sourceTree = "<group>"; };
 		9B36F20A29A00C9500D139C1 /* NSNotificationName+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSNotificationName+Extension.swift"; sourceTree = "<group>"; };
+		9B36F20C29A0271B00D139C1 /* RoundMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundMapView.swift; sourceTree = "<group>"; };
 		9BA4F9A2299CAFA3000B3C8B /* WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BA4F9A5299CAFA3000B3C8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BA4F9A7299CAFA3000B3C8B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -265,6 +267,7 @@
 				9BD27DBF299F468700359C4D /* RoundLabelView.swift */,
 				9BD27DC1299F568400359C4D /* RoundTableView.swift */,
 				9BD27DC8299F644900359C4D /* RoundCollectionView.swift */,
+				9B36F20C29A0271B00D139C1 /* RoundMapView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -536,6 +539,7 @@
 				9BA4F9A6299CAFA3000B3C8B /* AppDelegate.swift in Sources */,
 				9BD27DC2299F568400359C4D /* RoundTableView.swift in Sources */,
 				9BD27DC0299F468700359C4D /* RoundLabelView.swift in Sources */,
+				9B36F20D29A0271B00D139C1 /* RoundMapView.swift in Sources */,
 				9BD27DCE299FD04700359C4D /* UIViewController+Extension.swift in Sources */,
 				9BA4F9A8299CAFA3000B3C8B /* SceneDelegate.swift in Sources */,
 				9BD27D9D299E1C2400359C4D /* WindDTO.swift in Sources */,
