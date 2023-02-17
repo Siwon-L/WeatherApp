@@ -87,7 +87,6 @@ final class MainView: UIView {
     
     windRoundView.then {
       $0.roundView.titleLabel.text = "바람 속도"
-      $0.infoLabel.text = "50%"
     }
     
     detailVerticalStackView.then {
