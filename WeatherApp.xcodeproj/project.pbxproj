@@ -44,6 +44,7 @@
 		9BD27DB2299E58F300359C4D /* WeatherRepositoryable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD27DB1299E58F300359C4D /* WeatherRepositoryable.swift */; };
 		9BD27DB5299E597D00359C4D /* WeatherUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD27DB4299E597D00359C4D /* WeatherUseCase.swift */; };
 		9BD27DB7299E61DD00359C4D /* DayWeatherInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD27DB6299E61DD00359C4D /* DayWeatherInfo.swift */; };
+		9BD27DBA299F295700359C4D /* UIStackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD27DB9299F295700359C4D /* UIStackView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,6 +84,7 @@
 		9BD27DB1299E58F300359C4D /* WeatherRepositoryable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRepositoryable.swift; sourceTree = "<group>"; };
 		9BD27DB4299E597D00359C4D /* WeatherUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherUseCase.swift; sourceTree = "<group>"; };
 		9BD27DB6299E61DD00359C4D /* DayWeatherInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayWeatherInfo.swift; sourceTree = "<group>"; };
+		9BD27DB9299F295700359C4D /* UIStackView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 		9BA4F9CA299CE5D5000B3C8B /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				9BD27DB8299F294400359C4D /* Extension */,
 				9BA4F9CB299CE5F2000B3C8B /* Main */,
 			);
 			path = Presentation;
@@ -309,6 +312,14 @@
 			path = UseCase;
 			sourceTree = "<group>";
 		};
+		9BD27DB8299F294400359C4D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9BD27DB9299F295700359C4D /* UIStackView+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -403,6 +414,7 @@
 				9BA4F9DD299DE8B4000B3C8B /* Endpoint.swift in Sources */,
 				9BA4F9AA299CAFA3000B3C8B /* MainViewController.swift in Sources */,
 				9BD27D90299E14DF00359C4D /* CoordDTO.swift in Sources */,
+				9BD27DBA299F295700359C4D /* UIStackView+Extension.swift in Sources */,
 				9BA4F9E4299DF09A000B3C8B /* Bundle+Extension.swift in Sources */,
 				9BD27DB5299E597D00359C4D /* WeatherUseCase.swift in Sources */,
 				9BD27DAF299E54CF00359C4D /* WeatherRepository.swift in Sources */,
