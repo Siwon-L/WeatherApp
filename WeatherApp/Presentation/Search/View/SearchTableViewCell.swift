@@ -54,3 +54,12 @@ final class SearchTableViewCell: UITableViewCell {
     }
   }
 }
+
+// MARK: Binder
+
+extension SearchTableViewCell {
+  func bindView(city: City) {
+    cityLabel.text = city.name
+    countryLabel.text = city.country
+  }
+}
