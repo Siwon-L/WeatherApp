@@ -51,6 +51,7 @@
 		9BD27DC2299F568400359C4D /* RoundTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD27DC1299F568400359C4D /* RoundTableView.swift */; };
 		9BD27DC5299F578800359C4D /* WeatherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD27DC4299F578800359C4D /* WeatherTableViewCell.swift */; };
 		9BD27DC7299F634900359C4D /* WeatherCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD27DC6299F634900359C4D /* WeatherCollectionViewCell.swift */; };
+		9BD27DC9299F644900359C4D /* RoundCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD27DC8299F644900359C4D /* RoundCollectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -97,6 +98,7 @@
 		9BD27DC1299F568400359C4D /* RoundTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundTableView.swift; sourceTree = "<group>"; };
 		9BD27DC4299F578800359C4D /* WeatherTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTableViewCell.swift; sourceTree = "<group>"; };
 		9BD27DC6299F634900359C4D /* WeatherCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCollectionViewCell.swift; sourceTree = "<group>"; };
+		9BD27DC8299F644900359C4D /* RoundCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundCollectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,6 +219,7 @@
 				9BD27DBD299F424C00359C4D /* RoundView.swift */,
 				9BD27DBF299F468700359C4D /* RoundLabelView.swift */,
 				9BD27DC1299F568400359C4D /* RoundTableView.swift */,
+				9BD27DC8299F644900359C4D /* RoundCollectionView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -462,6 +465,7 @@
 				9BD27DB2299E58F300359C4D /* WeatherRepositoryable.swift in Sources */,
 				9BD27D9F299E1CB600359C4D /* SysDTO.swift in Sources */,
 				9BD27D8A299E109200359C4D /* WeatherInfoDTO.swift in Sources */,
+				9BD27DC9299F644900359C4D /* RoundCollectionView.swift in Sources */,
 				9BD27DA6299E382C00359C4D /* WeatherInfo.swift in Sources */,
 				9BD27DA8299E38CE00359C4D /* City.swift in Sources */,
 				9BA4F9D2299CE900000B3C8B /* Then.swift in Sources */,
