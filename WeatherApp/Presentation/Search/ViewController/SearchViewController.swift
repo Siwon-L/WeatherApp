@@ -10,6 +10,7 @@ import UIKit
 import RxSwift
 
 final class SearchViewController: UIViewController {
+  weak var coordinator: SearchCoordinator?
   private let tableView = UITableView()
   private let viewModel: SearchViewModelable
   private let disposeBag = DisposeBag()
