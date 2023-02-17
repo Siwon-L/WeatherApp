@@ -13,9 +13,7 @@ extension Bundle {
       return ""
     }
     
-    guard let url = URL(string: file) else {
-      return ""
-    }
+    let url = URL(fileURLWithPath: file)
     
     guard let resource = try? NSDictionary(contentsOf: url, error: ()) else {
       return ""
