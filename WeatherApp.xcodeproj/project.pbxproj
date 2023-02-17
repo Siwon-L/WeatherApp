@@ -52,6 +52,7 @@
 		9BD27DC5299F578800359C4D /* WeatherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD27DC4299F578800359C4D /* WeatherTableViewCell.swift */; };
 		9BD27DC7299F634900359C4D /* WeatherCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD27DC6299F634900359C4D /* WeatherCollectionViewCell.swift */; };
 		9BD27DC9299F644900359C4D /* RoundCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD27DC8299F644900359C4D /* RoundCollectionView.swift */; };
+		9BD27DCC299F6F0000359C4D /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD27DCB299F6F0000359C4D /* MainViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,6 +100,7 @@
 		9BD27DC4299F578800359C4D /* WeatherTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTableViewCell.swift; sourceTree = "<group>"; };
 		9BD27DC6299F634900359C4D /* WeatherCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCollectionViewCell.swift; sourceTree = "<group>"; };
 		9BD27DC8299F644900359C4D /* RoundCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundCollectionView.swift; sourceTree = "<group>"; };
+		9BD27DCB299F6F0000359C4D /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +180,7 @@
 		9BA4F9CB299CE5F2000B3C8B /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				9BD27DCA299F6E6600359C4D /* ViewModel */,
 				9BA4F9D3299CECD8000B3C8B /* View */,
 				9BA4F9CC299CE5FD000B3C8B /* Coordinator */,
 				9BA4F9CD299CE604000B3C8B /* ViewController */,
@@ -349,6 +352,14 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		9BD27DCA299F6E6600359C4D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9BD27DCB299F6F0000359C4D /* MainViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -445,6 +456,7 @@
 				9BA4F9D5299CECE5000B3C8B /* MainView.swift in Sources */,
 				9BA4F9CF299CE618000B3C8B /* MainCoordinator.swift in Sources */,
 				9BA4F9DD299DE8B4000B3C8B /* Endpoint.swift in Sources */,
+				9BD27DCC299F6F0000359C4D /* MainViewModel.swift in Sources */,
 				9BA4F9AA299CAFA3000B3C8B /* MainViewController.swift in Sources */,
 				9BD27D90299E14DF00359C4D /* CoordDTO.swift in Sources */,
 				9BD27DBA299F295700359C4D /* UIStackView+Extension.swift in Sources */,
