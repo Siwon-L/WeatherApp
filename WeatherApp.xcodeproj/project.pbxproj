@@ -55,6 +55,7 @@
 		9BD27DCC299F6F0000359C4D /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD27DCB299F6F0000359C4D /* MainViewModel.swift */; };
 		9BD27DCE299FD04700359C4D /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD27DCD299FD04700359C4D /* UIViewController+Extension.swift */; };
 		9BD27DD0299FD07300359C4D /* UIAlertController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD27DCF299FD07300359C4D /* UIAlertController+Extension.swift */; };
+		9BD27DD3299FE0F100359C4D /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD27DD2299FE0F100359C4D /* SearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -105,6 +106,7 @@
 		9BD27DCB299F6F0000359C4D /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		9BD27DCD299FD04700359C4D /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		9BD27DCF299FD07300359C4D /* UIAlertController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Extension.swift"; sourceTree = "<group>"; };
+		9BD27DD2299FE0F100359C4D /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +177,7 @@
 		9BA4F9CA299CE5D5000B3C8B /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				9BD27DD1299FDFFA00359C4D /* Search */,
 				9BD27DB8299F294400359C4D /* Extension */,
 				9BA4F9CB299CE5F2000B3C8B /* Main */,
 			);
@@ -366,6 +369,22 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		9BD27DD1299FDFFA00359C4D /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				9BD27DD4299FE4A000359C4D /* ViewController */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		9BD27DD4299FE4A000359C4D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9BD27DD2299FE0F100359C4D /* SearchViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -462,6 +481,7 @@
 				9BA4F9D5299CECE5000B3C8B /* MainView.swift in Sources */,
 				9BA4F9CF299CE618000B3C8B /* MainCoordinator.swift in Sources */,
 				9BA4F9DD299DE8B4000B3C8B /* Endpoint.swift in Sources */,
+				9BD27DD3299FE0F100359C4D /* SearchViewController.swift in Sources */,
 				9BD27DCC299F6F0000359C4D /* MainViewModel.swift in Sources */,
 				9BA4F9AA299CAFA3000B3C8B /* MainViewController.swift in Sources */,
 				9BD27D90299E14DF00359C4D /* CoordDTO.swift in Sources */,
