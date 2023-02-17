@@ -14,7 +14,6 @@ final class WeatherCollectionViewCell: UICollectionViewCell {
   let timeLabel = UILabel()
   let weatherIconImageView = UIImageView()
   let tempLabel = UILabel()
-  private let mainStackView = UIStackView()
 
   
   override init(frame: CGRect) {
@@ -28,21 +27,39 @@ final class WeatherCollectionViewCell: UICollectionViewCell {
   }
   
   private func attribute() {
-    mainStackView.then {
-      $0.axis = .vertical
-      $0.addArrangedSubviews([
-        timeLabel,
-        weatherIconImageView,
-        tempLabel
-      ])
+    timeLabel.then {
+      $0.textColor = .systemBackground
+      $0.font = .systemFont(ofSize: 12)
+      $0.textAlignment = .center
     }
+    
+    tempLabel.then {
+      $0.textAlignment = .center
+    }
+    
+    tempLabel.textColor = .systemBackground
   }
   
   private func layout() {
-    addSubview(mainStackView)
+    addSubviews([
+      timeLabel,
+      weatherIconImageView,
+      tempLabel
+    ])
     
-    mainStackView.snp.makeConstraints {
-      $0.directionalEdges.equalToSuperview()
+    timeLabel.snp.makeConstraints {
+      $0.centerX.equalToSuperview()
+      $0.top.equalToSuperview().inset(16)
+    }
+    
+    weatherIconImageView.snp.makeConstraints {
+      $0.height.width.equalTo(35)
+      $0.center.equalToSuperview()
+    }
+    
+    tempLabel.snp.makeConstraints {
+      $0.centerX.equalToSuperview()
+      $0.bottom.equalToSuperview()
     }
   }
 }
