@@ -36,6 +36,7 @@ final class RoundTableView: UIView {
     
     roundView.snp.makeConstraints {
       $0.directionalEdges.equalToSuperview()
+      $0.height.equalTo(250)
     }
   }
 }
