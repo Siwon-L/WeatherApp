@@ -46,6 +46,7 @@
 		9BD27DB7299E61DD00359C4D /* DayWeatherInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD27DB6299E61DD00359C4D /* DayWeatherInfo.swift */; };
 		9BD27DBA299F295700359C4D /* UIStackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD27DB9299F295700359C4D /* UIStackView+Extension.swift */; };
 		9BD27DBC299F298900359C4D /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD27DBB299F298900359C4D /* UIView+Extension.swift */; };
+		9BD27DBE299F424C00359C4D /* RoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD27DBD299F424C00359C4D /* RoundView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,6 +88,7 @@
 		9BD27DB6299E61DD00359C4D /* DayWeatherInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayWeatherInfo.swift; sourceTree = "<group>"; };
 		9BD27DB9299F295700359C4D /* UIStackView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extension.swift"; sourceTree = "<group>"; };
 		9BD27DBB299F298900359C4D /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		9BD27DBD299F424C00359C4D /* RoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				9BA4F9D4299CECE5000B3C8B /* MainView.swift */,
+				9BD27DBD299F424C00359C4D /* RoundView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -407,6 +410,7 @@
 				9BD27DBC299F298900359C4D /* UIView+Extension.swift in Sources */,
 				9BA4F9C7299CB4D8000B3C8B /* Coordinator.swift in Sources */,
 				9BD27DAA299E396300359C4D /* ObservationInfo.swift in Sources */,
+				9BD27DBE299F424C00359C4D /* RoundView.swift in Sources */,
 				9BA4F9E0299DEABB000B3C8B /* HTTPError.swift in Sources */,
 				9BD27D94299E18A100359C4D /* WeatherDTO.swift in Sources */,
 				9BD27D8C299E115A00359C4D /* ObservationInfoDTO.swift in Sources */,
