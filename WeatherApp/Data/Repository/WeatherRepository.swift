@@ -14,7 +14,11 @@ final class WeatherRepository: WeatherRepositoryable {
   private let decoder: JSONDecoder
   private let dateFormatter: DateFormatter
   
-  init(networkService: NetworkServiceable, decoder: JSONDecoder, dateFormatter: DateFormatter) {
+  init(
+    networkService: NetworkServiceable,
+    decoder: JSONDecoder = .init(),
+    dateFormatter: DateFormatter
+  ) {
     self.networkService = networkService
     self.decoder = decoder
     self.dateFormatter = dateFormatter
