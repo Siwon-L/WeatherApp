@@ -63,3 +63,13 @@ final class WeatherCollectionViewCell: UICollectionViewCell {
     }
   }
 }
+
+// MARK: Binder
+
+extension WeatherCollectionViewCell {
+  func bindView(info: ObservationInfo) {
+    timeLabel.text = info.time
+    weatherIconImageView.image = UIImage(named: info.icon)
+    tempLabel.text = "\(Int(info.temp.rounded()))°"
+  }
+}
