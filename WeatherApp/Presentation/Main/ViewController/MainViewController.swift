@@ -148,7 +148,7 @@ extension MainViewController {
   private func setAnnotation(lat: Double, lon: Double, cityName: String) {
     mainView.roundMapView.mapView.removeAnnotations(mainView.roundMapView.mapView.annotations)
     let annotation = MKPointAnnotation()
-    annotation.coordinate = CLLocationCoordinate2DMake(lat, lon)
+    annotation.coordinate = CLLocationCoordinate2D(latitude: lat, longitude: lon)
     annotation.title = cityName
     mainView.roundMapView.mapView.addAnnotation(annotation)
   }
