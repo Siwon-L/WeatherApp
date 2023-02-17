@@ -27,6 +27,7 @@ final class MainView: UIView {
   private let emptyRoundView = RoundView(view: UIView())
   let weekWeatherRoundTabelView = RoundTableView()
   let dayWeatherRoundCollectionView = RoundCollectionView()
+  let roundMapView = RoundMapView()
 
   
   init() {
@@ -124,6 +125,10 @@ final class MainView: UIView {
     dayWeatherRoundCollectionView.then {
       $0.roundView.titleLabel.text = "시간별 일기예보"
     }
+    
+    roundMapView.then {
+      $0.roundView.titleLabel.text = "강수량"
+    }
   }
   
   private func layout() {
@@ -137,6 +142,7 @@ final class MainView: UIView {
       mainInfoStackView,
       dayWeatherRoundCollectionView,
       weekWeatherRoundTabelView,
+      roundMapView,
       detailVerticalStackView
     ])
     
@@ -159,10 +165,17 @@ final class MainView: UIView {
       $0.width.equalToSuperview().inset(16)
     }
     
+    roundMapView.snp.makeConstraints {
+      $0.centerX.equalToSuperview()
+      $0.top.equalTo(weekWeatherRoundTabelView.snp.bottom).offset(16)
+      $0.width.equalToSuperview().inset(16)
+      $0.height.equalTo(roundMapView.snp.width)
+    }
+    
     detailVerticalStackView.snp.makeConstraints {
       $0.centerX.equalToSuperview()
       $0.width.equalToSuperview().inset(16)
-      $0.top.equalTo(weekWeatherRoundTabelView.snp.bottom).offset(16)
+      $0.top.equalTo(roundMapView.snp.bottom).offset(16)
       $0.bottom.equalToSuperview()
       $0.height.equalTo(detailVerticalStackView.snp.width)
     }
