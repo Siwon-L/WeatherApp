@@ -43,4 +43,31 @@ final class WeatherRepository: WeatherRepositoryable {
       return Disposables.create()
     }.asObservable()
   }
+  
+  func parsingCityList() -> Observable<[City]> {
+    return Single<[City]>.create { [weak self] single in
+      guard let path = Bundle.main.path(forResource: "citylist", ofType: "json") else {
+        single(.failure(WeatherServiceError.decode(reason: .decodeFailure(WeatherInfoDTO.self))))
+        return Disposables.create()
+      }
+      
+      guard let jsonString = try? String(contentsOfFile: path) else {
+        single(.failure(WeatherServiceError.decode(reason: .decodeFailure(WeatherInfoDTO.self))))
+        return Disposables.create()
+      }
+      
+      guard let data = jsonString.data(using: .utf8) else {
+        single(.failure(WeatherServiceError.decode(reason: .decodeFailure(WeatherInfoDTO.self))))
+        return Disposables.create()
+      }
+      
+      guard let cityList = try? self?.decoder.decode([CityDTO].self, from: data).map({ $0.toDomain() }) else {
+        single(.failure(WeatherServiceError.decode(reason: .decodeFailure(WeatherInfoDTO.self))))
+        return Disposables.create()
+      }
+      single(.success(cityList))
+            
+      return Disposables.create()
+    }.asObservable()
+  }
 }
