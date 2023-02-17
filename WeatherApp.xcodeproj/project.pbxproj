@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B36F202299FEB1D00D139C1 /* citylist.json in Resources */ = {isa = PBXBuildFile; fileRef = 9B36F201299FEB1C00D139C1 /* citylist.json */; };
 		9BA4F9A6299CAFA3000B3C8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA4F9A5299CAFA3000B3C8B /* AppDelegate.swift */; };
 		9BA4F9A8299CAFA3000B3C8B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA4F9A7299CAFA3000B3C8B /* SceneDelegate.swift */; };
 		9BA4F9AA299CAFA3000B3C8B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA4F9A9299CAFA3000B3C8B /* MainViewController.swift */; };
@@ -56,9 +57,11 @@
 		9BD27DCE299FD04700359C4D /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD27DCD299FD04700359C4D /* UIViewController+Extension.swift */; };
 		9BD27DD0299FD07300359C4D /* UIAlertController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD27DCF299FD07300359C4D /* UIAlertController+Extension.swift */; };
 		9BD27DD3299FE0F100359C4D /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD27DD2299FE0F100359C4D /* SearchViewController.swift */; };
+		9BD27DD6299FE4D900359C4D /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD27DD5299FE4D900359C4D /* SearchTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9B36F201299FEB1C00D139C1 /* citylist.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = citylist.json; sourceTree = "<group>"; };
 		9BA4F9A2299CAFA3000B3C8B /* WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BA4F9A5299CAFA3000B3C8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BA4F9A7299CAFA3000B3C8B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +110,7 @@
 		9BD27DCD299FD04700359C4D /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		9BD27DCF299FD07300359C4D /* UIAlertController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Extension.swift"; sourceTree = "<group>"; };
 		9BD27DD2299FE0F100359C4D /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		9BD27DD5299FE4D900359C4D /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +146,7 @@
 		9BA4F9A4299CAFA3000B3C8B /* WeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				9B36F201299FEB1C00D139C1 /* citylist.json */,
 				9BA4F9C4299CB4AA000B3C8B /* Application */,
 				9BA4F9D6299DE451000B3C8B /* Data */,
 				9BD27DA3299E368C00359C4D /* Domain */,
@@ -373,6 +378,7 @@
 			isa = PBXGroup;
 			children = (
 				9BD27DD4299FE4A000359C4D /* ViewController */,
+				9BD27DD5299FE4D900359C4D /* SearchTableViewCell.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -454,6 +460,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BA4F9B2299CAFA7000B3C8B /* LaunchScreen.storyboard in Resources */,
+				9B36F202299FEB1D00D139C1 /* citylist.json in Resources */,
 				9BA4F9E2299DEEB4000B3C8B /* WeatherAPIInfo.plist in Resources */,
 				9BA4F9AF299CAFA7000B3C8B /* Assets.xcassets in Resources */,
 			);
@@ -503,6 +510,7 @@
 				9BD27D8E299E13A400359C4D /* CityDTO.swift in Sources */,
 				9BD27DB2299E58F300359C4D /* WeatherRepositoryable.swift in Sources */,
 				9BD27D9F299E1CB600359C4D /* SysDTO.swift in Sources */,
+				9BD27DD6299FE4D900359C4D /* SearchTableViewCell.swift in Sources */,
 				9BD27DD0299FD07300359C4D /* UIAlertController+Extension.swift in Sources */,
 				9BD27D8A299E109200359C4D /* WeatherInfoDTO.swift in Sources */,
 				9BD27DC9299F644900359C4D /* RoundCollectionView.swift in Sources */,
