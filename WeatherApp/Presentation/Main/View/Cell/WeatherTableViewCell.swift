@@ -8,7 +8,6 @@
 import UIKit
 
 import SnapKit
-import RxSwift
 
 final class WeatherTableViewCell: UITableViewCell {
   static let identifier = "WeatherTableViewCell"
