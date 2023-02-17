@@ -71,6 +71,7 @@ final class SearchViewController: UIViewController {
   
   private func bindOutput(_ viewModel: SearchViewModelable) {
     viewModel.searchedList
+      .observe(on: MainScheduler.instance)
       .bind(
         to: tableView.rx.items(
           cellIdentifier: SearchTableViewCell.identifier,

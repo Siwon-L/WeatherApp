@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import MapKit
 
 import SnapKit
 import RxSwift
@@ -87,10 +88,12 @@ final class MainViewController: UIViewController {
   
   private func bindOutput(_ viewModel: MainViewModelable) {
     viewModel.weatherInfo
+      .observe(on: MainScheduler.instance)
       .bind(to: mainView.bindView)
       .disposed(by: disposeBag)
     
     viewModel.weatherInfo
+      .observe(on: MainScheduler.instance)
       .map { $0.weekWeatherInfo }
       .bind(to: mainView.weekWeatherRoundTabelView.tableView.rx.items(
         cellIdentifier: WeatherTableViewCell.identifier,
@@ -102,6 +105,7 @@ final class MainViewController: UIViewController {
       }.disposed(by: disposeBag)
     
     viewModel.weatherInfo
+      .observe(on: MainScheduler.instance)
       .map { $0.observationInfos[0..<8] }
       .bind(to: mainView.dayWeatherRoundCollectionView.collectionView.rx.items(
         cellIdentifier: WeatherCollectionViewCell.identifier,
