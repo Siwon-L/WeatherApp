@@ -47,6 +47,7 @@
 		9BD27DBA299F295700359C4D /* UIStackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD27DB9299F295700359C4D /* UIStackView+Extension.swift */; };
 		9BD27DBC299F298900359C4D /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD27DBB299F298900359C4D /* UIView+Extension.swift */; };
 		9BD27DBE299F424C00359C4D /* RoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD27DBD299F424C00359C4D /* RoundView.swift */; };
+		9BD27DC0299F468700359C4D /* RoundLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD27DBF299F468700359C4D /* RoundLabelView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,6 +90,7 @@
 		9BD27DB9299F295700359C4D /* UIStackView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extension.swift"; sourceTree = "<group>"; };
 		9BD27DBB299F298900359C4D /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		9BD27DBD299F424C00359C4D /* RoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundView.swift; sourceTree = "<group>"; };
+		9BD27DBF299F468700359C4D /* RoundLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundLabelView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +208,7 @@
 			children = (
 				9BA4F9D4299CECE5000B3C8B /* MainView.swift */,
 				9BD27DBD299F424C00359C4D /* RoundView.swift */,
+				9BD27DBF299F468700359C4D /* RoundLabelView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -429,6 +432,7 @@
 				9BA4F9C9299CB4F1000B3C8B /* AppCoordinator.swift in Sources */,
 				9BD27DB7299E61DD00359C4D /* DayWeatherInfo.swift in Sources */,
 				9BA4F9A6299CAFA3000B3C8B /* AppDelegate.swift in Sources */,
+				9BD27DC0299F468700359C4D /* RoundLabelView.swift in Sources */,
 				9BA4F9A8299CAFA3000B3C8B /* SceneDelegate.swift in Sources */,
 				9BD27D9D299E1C2400359C4D /* WindDTO.swift in Sources */,
 				9BD27DA1299E1DA600359C4D /* RainDTO.swift in Sources */,
