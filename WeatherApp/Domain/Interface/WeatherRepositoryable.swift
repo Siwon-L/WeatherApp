@@ -11,5 +11,5 @@ import RxSwift
 
 protocol WeatherRepositoryable {
   func requestWeather(lat: Double, lon: Double) -> Observable<WeatherInfo>
-  func parsingCityList() -> Observable<[City]>
+  func getCityList() -> Observable<[City]>
 }

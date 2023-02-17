@@ -26,6 +26,6 @@ final class WeatherUseCase: WeatherUseCaseable {
   }
   
   func parsingCityList() -> Observable<[City]> {
-    return repository.parsingCityList()
+    return repository.getCityList()
   }
 }

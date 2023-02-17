@@ -12,12 +12,12 @@ import RxSwift
 final class WeatherRepository: WeatherRepositoryable {
   private let networkService: NetworkServiceable
   private let decoder: JSONDecoder
-  private let dateFormatter: DateFormatter
+  private let dateFormatter: DateFormatter?
   
   init(
     networkService: NetworkServiceable,
     decoder: JSONDecoder = .init(),
-    dateFormatter: DateFormatter
+    dateFormatter: DateFormatter?
   ) {
     self.networkService = networkService
     self.decoder = decoder
@@ -26,6 +26,7 @@ final class WeatherRepository: WeatherRepositoryable {
   
   func requestWeather(lat: Double, lon: Double) -> Observable<WeatherInfo> {
     let endpoint = WeatherEndpointAPI.weather(lat: lat, lon: lon).asEndpoint
+    guard let dateFormatter = dateFormatter else { return .empty() }
     
     return Single<WeatherInfo>.create { single in
       Task { [weak self] in
@@ -35,7 +36,7 @@ final class WeatherRepository: WeatherRepositoryable {
           guard let weatherInfo = try? self.decoder.decode(WeatherInfoDTO.self, from: data) else {
             throw WeatherServiceError.decode(reason: .decodeFailure(WeatherInfoDTO.self))
           }
-          single(.success(weatherInfo.toDomain(dateFormatter: self.dateFormatter)))
+          single(.success(weatherInfo.toDomain(dateFormatter: dateFormatter)))
         } catch {
           single(.failure(error))
         }
@@ -44,30 +45,30 @@ final class WeatherRepository: WeatherRepositoryable {
     }.asObservable()
   }
   
-  func parsingCityList() -> Observable<[City]> {
+  func getCityList() -> Observable<[City]> {
     return Single<[City]>.create { [weak self] single in
-      guard let path = Bundle.main.path(forResource: "citylist", ofType: "json") else {
-        single(.failure(WeatherServiceError.decode(reason: .decodeFailure(WeatherInfoDTO.self))))
-        return Disposables.create()
+      Task { [weak self] in
+        guard let self = self else { return }
+        do {
+          let cityList = try await self.parsingCityList()
+          single(.success(cityList))
+        } catch {
+          single(.failure(error))
+        }
       }
-      
-      guard let jsonString = try? String(contentsOfFile: path) else {
-        single(.failure(WeatherServiceError.decode(reason: .decodeFailure(WeatherInfoDTO.self))))
-        return Disposables.create()
-      }
-      
-      guard let data = jsonString.data(using: .utf8) else {
-        single(.failure(WeatherServiceError.decode(reason: .decodeFailure(WeatherInfoDTO.self))))
-        return Disposables.create()
-      }
-      
-      guard let cityList = try? self?.decoder.decode([CityDTO].self, from: data).map({ $0.toDomain() }) else {
-        single(.failure(WeatherServiceError.decode(reason: .decodeFailure(WeatherInfoDTO.self))))
-        return Disposables.create()
-      }
-      single(.success(cityList))
-            
       return Disposables.create()
     }.asObservable()
+  }
+
+  private func parsingCityList() async throws -> [City] {
+    guard let path = Bundle.main.path(forResource: "citylist", ofType: "json") else {
+      throw WeatherServiceError.decode(reason: .decodeFailure(WeatherInfoDTO.self))
+    }
+    let jsonString = try String(contentsOfFile: path)
+    guard let data = jsonString.data(using: .utf8) else {
+      throw WeatherServiceError.decode(reason: .decodeFailure(WeatherInfoDTO.self))
+    }
+    let cityList = try decoder.decode([CityDTO].self, from: data).map { $0.toDomain() }
+    return cityList
   }
 }
