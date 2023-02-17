@@ -11,6 +11,7 @@ import RxSwift
 
 protocol WeatherUseCaseable {
   func requestWeather(lat: Double, lon: Double) -> Observable<WeatherInfo>
+  func parsingCityList() -> Observable<[City]>
 }
 
 final class WeatherUseCase: WeatherUseCaseable {
@@ -22,5 +23,9 @@ final class WeatherUseCase: WeatherUseCaseable {
   
   func requestWeather(lat: Double, lon: Double) -> Observable<WeatherInfo> {
     return repository.requestWeather(lat: lat, lon: lon)
+  }
+  
+  func parsingCityList() -> Observable<[City]> {
+    return repository.parsingCityList()
   }
 }
