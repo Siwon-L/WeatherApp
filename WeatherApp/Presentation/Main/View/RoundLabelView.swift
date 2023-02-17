@@ -25,6 +25,7 @@ final class RoundLabelView: UIView {
   
   private func attribute() {
     infoLabel.then {
+      $0.textColor = .systemBackground
       $0.font = .systemFont(ofSize: 30)
     }
   }

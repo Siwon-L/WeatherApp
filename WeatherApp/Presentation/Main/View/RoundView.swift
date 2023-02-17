@@ -27,6 +27,7 @@ final class RoundView: UIView {
     layer.cornerRadius = 10
     
     titleLabel.then {
+      $0.textColor = .systemBackground
       $0.font = .systemFont(ofSize: 12)
       $0.setContentHuggingPriority(.defaultHigh, for: .vertical)
     }

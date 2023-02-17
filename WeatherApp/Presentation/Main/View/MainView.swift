@@ -43,21 +43,25 @@ final class MainView: UIView {
     scrollView.showsVerticalScrollIndicator = false
     
     cityNameLabel.then {
+      $0.textColor = .systemBackground
       $0.textAlignment = .center
       $0.font = .systemFont(ofSize: 40, weight: .regular)
     }
     
     tempLabel.then {
+      $0.textColor = .systemBackground
       $0.textAlignment = .center
       $0.font = .systemFont(ofSize: 100, weight: .medium)
     }
     
     weatherDescriptionLabel.then {
+      $0.textColor = .systemBackground
       $0.textAlignment = .center
       $0.font = .systemFont(ofSize: 30, weight: .light)
     }
     
     maxAndMinTempLable.then {
+      $0.textColor = .systemBackground
       $0.textAlignment = .center
       $0.font = .systemFont(ofSize: 20, weight: .light)
     }

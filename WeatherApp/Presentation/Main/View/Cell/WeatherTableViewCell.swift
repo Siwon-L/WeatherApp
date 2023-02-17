@@ -30,6 +30,9 @@ final class WeatherTableViewCell: UITableViewCell {
   
   private func attribute() {
     backgroundColor = .clear
+    dayLabel.textColor = .systemBackground
+    minTempLabel.textColor = .systemBackground
+    maxTempLabel.textColor = .systemBackground
     
     tempStackView.then {
       $0.addArrangedSubviews([
