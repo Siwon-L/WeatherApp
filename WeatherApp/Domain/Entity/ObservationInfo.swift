@@ -16,6 +16,7 @@ struct ObservationInfo {
   let weatherDescription: String
   let clouds: Int
   let windSpeed: Double
+  let icon: String
 }
 
 enum WeatherCase {

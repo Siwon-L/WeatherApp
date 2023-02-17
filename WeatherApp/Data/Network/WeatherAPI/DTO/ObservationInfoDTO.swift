@@ -43,7 +43,8 @@ struct ObservationInfoDTO: Codable {
       weatherCase: weather.first?.weatherCase.toDomain() ?? .none,
       weatherDescription: weather.first?.description ?? "알 수 없음",
       clouds: clouds.all,
-      windSpeed: wind.speed
+      windSpeed: wind.speed,
+      icon: weather.first?.icon ?? ""
     )
   }
 }

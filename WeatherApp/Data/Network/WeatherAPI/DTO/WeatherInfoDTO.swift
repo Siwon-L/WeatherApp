@@ -33,14 +33,14 @@ struct WeatherInfoDTO: Codable {
     var weekWeatherInfo: [DayWeatherInfo] = []
     for day in observationInfos.map({ $0.day }).deduplication() {
       let dayWeather = observationInfos.filter({ $0.day == day })
-      guard let dayWeatherCase = dayWeather.first(where: { $0.time == "오후 12시" })?.weatherCase else { break }
+      guard let dayWeatherIcon = dayWeather.first(where: { $0.time == "오후 12시" })?.icon ?? dayWeather.first?.icon else { continue }
       let dayTeams = dayWeather.map({ $0.temp })
-      guard let dayTeamMax = dayTeams.max() else { break }
-      guard let dayTeamMin = dayTeams.min() else { break }
+      guard let dayTeamMax = dayTeams.max() else { continue }
+      guard let dayTeamMin = dayTeams.min() else { continue }
       
       let dayWeatherInfo = DayWeatherInfo(
         day: day,
-        weatherCase: dayWeatherCase,
+        icon: dayWeatherIcon,
         tempMax: dayTeamMax,
         tempMin: dayTeamMin
       )
