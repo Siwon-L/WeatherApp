@@ -132,6 +132,7 @@ final class MainViewController: UIViewController {
       }.disposed(by: disposeBag)
       
     viewModel.errorMessage
+      .filter { $0 != nil }
       .bind(to: showErrorAlert)
       .disposed(by: disposeBag)
   }
